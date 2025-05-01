@@ -1,16 +1,27 @@
 :root {
-    --header-background: #2B4A61DE;
-    --header-hover-text-color: #94CFFF;
-    --header-text-color: #FFFFFF;
-    --multiple-section-text-color: #0A3853;
-    --multiple-section-name-color: #000000;
-    --button-text-color: #26C6EA;
-    --button-background-color: #0B0E66;
+    --header-footer-background: rgba(43, 74, 97, 0.871);
+    --header-hover-text-color: rgb(148, 207, 255);
+    --multiple-section-text-color-one: rgb(10, 56, 83);
+    --multiple-section-text-color-two: rgb(20, 20, 20);
+    --multiple-section-name-color: rgb(0, 0, 0);
+    --button-text-color: rgb(38, 198, 234);
+    --button-background-color: rgb(11, 14, 102);
+    --button-border-color: rgb(38, 199, 234);
     --learning-boxes-color: #FFFFFFB2;
-    --learning-ukr-text: #141414;
-    --learning-navi-text: #000000;
-    --footer-text-color: #FFFFFF;
+    --learning-ukr-text: rgb(20, 20, 20);
+    --learning-navi-text: rgb(0, 0, 0);
+    --header-footer-text-color: #FFFFFF;
     --font-family: "Inter", sans-serif;
     --second-family: "HeadlandOne" sans-serif;
     --language-change-font: "Hammersmith One" sans-serif;
+}
+
+
+.footer-container {
+    background-image: url("../imgs/mountain-pic.png") 1440px 704px no-repeat;
+    width: 1440px;
+    height: 704px;
+    padding-top: 2181px;
+    padding-bottom: 350px;
+
 }
