@@ -15,13 +15,3 @@
     --second-family: "HeadlandOne" sans-serif;
     --button-language-change-font: "Hammersmith One" sans-serif;
 }
-
-
-.footer-container {
-    background-image: url("../imgs/mountain-pic.png") 1440px 704px no-repeat;
-    width: 1440px;
-    height: 704px;
-    padding-top: 2181px;
-    padding-bottom: 350px;
-
-}
