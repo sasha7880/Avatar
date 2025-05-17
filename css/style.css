@@ -1,17 +1,265 @@
 :root {
-    --header-bg-color: rgba(43, 74, 97, 0.871);
-    --accent-color: rgb(148, 207, 255);
-    --text-color: rgb(10, 56, 83);
-    --title-color: rgb(20, 20, 20);
-    --text-second-color: rgb(0, 0, 0);
-    --button-text-color: rgb(38, 198, 234);
-    --button-bg-color: rgb(11, 14, 102);
-    --button-border-color: rgb(38, 199, 234);
-    --language-bg_box-color: #FFFFFFB2;
-    --title-second-color: rgb(20, 20, 20);
-    --learning-navi-text: #000000;
-    --footer-text-color: #FFFFFF;
-    ---main-font: "Inter", sans-serif;
-    --second-family: "HeadlandOne" sans-serif;
-    --button-language-change-font: "Hammersmith One" sans-serif;
+  --header-bg-color: rgba(43, 74, 97, 0.871);
+  --accent-color: rgb(148, 207, 255);
+  --text-color: rgb(10, 56, 83);
+  --title-color: rgb(20, 20, 20);
+  --text-second-color: rgb(0, 0, 0);
+  --button-text-color: rgb(38, 198, 234);
+  --button-bg-color: rgb(11, 14, 102);
+  --button-border-color: rgb(38, 199, 234);
+  --language-bg_box-color: #FFFFFFB2;
+  --title-second-color: rgb(20, 20, 20);
+  --learning-navi-text: #000000;
+  --footer-text-color: #FFFFFF;
+  ---main-font: "Inter", sans-serif;
+  --second-family: "HeadlandOne" sans-serif;
+  --button-language-change-font: "Hammersmith One" sans-serif;
+}
+
+.container {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*     Learning Section START
+                   SECTION 5 - SASHA      */
+
+.learning {
+  background-image: url("../imgs/mountain-pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(255, 255, 255, 0.6);
+  padding-top: 58px;
+  padding-bottom: 57px;
+
+}
+
+.learning-title {
+  text-align: center;
+  font-family: var(--second-family);
+  font-size: 32px;
+  line-height: 100%;
+  padding-bottom: 45px;
+}
+
+.learning-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 10px;
+
+}
+
+
+.learning-item {
+  background-color: var(--language-bg_box-color);
+  padding: 36px 29px;
+  text-align: center;
+
+}
+
+.learning-card:hover {
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+.learning-subtitle {
+  font-family: var(--second-family);
+  display: flex;
+  text-align: center;
+  padding: 40px 36px 120px;
+  Line-height: 24px;
+  Letter-spacing: 0px;
+}
+.bottom-text {
+  font-family: var(--second-family);
+  display: flex;
+  text-align: center;
+  padding: 40px 36px 120px;
+  Line-height: 24px;
+  Letter-spacing: 0px;
+}
+
+
+.learing-item {
+  flex-direction: column;
+  text-align: start;
+  flex-basis: calc((100% - 320px) / 3);
+}
+
+
+.learning-item:nth-child(1), .learning-item:nth-child(4) {
+background: url("../imgs/strila-element-l.png") var(--language-bg_box-color) no-repeat;
+background-position: center;
+padding: 40px 84px;
+}
+.learning-item:nth-child(2), .learning-item:nth-child(5) {
+  background: url("../imgs/bird-element.png") var(--language-bg_box-color) no-repeat;
+  background-position: center;
+  padding: 40px 84px;
+  }
+  .learning-item:nth-child(3), .learning-item:nth-child(6) {
+    background: url("../imgs/strila-element-r.png") var(--language-bg_box-color) no-repeat;
+    background-position: center;
+    padding: 40px 84px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+QUOTES SECTION SASHA */
+
+
+
+
+.quotes {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.quotes-container {
+  width: 1438px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.quotes-title {
+  font-size: 36px;
+  font-weight: 400px;
+  color: var(--learning-navi-text);
+  line-height: 45px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  padding-top: 75px;
+  padding-bottom: 54px;
+}
+
+.quotes-subtitle {
+  font-size: 24px;
+  color: var(--learning-navi-text);
+  margin: 0 0 30px 0;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.quotes-container img {
+  width: 400px;
+  height: 120px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* FOOTER SECTION SASHA */
+.footer {
+  background: #0b2b3d url('../imgs/footer-bg.png') no-repeat center center;
+  background-size: cover;
+  padding: 40px 20px;
+  font-family: var(---main-font);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(43, 74, 97, 0.9), rgba(43, 74, 97, 0.9)), 
+              url('./imgs/footer-bg.png') no-repeat center center;
+  background-size: cover;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 77px;
+  padding-bottom: 77px;
+  padding-left: 204px;
+  padding-right: 80px;
+}
+
+.footer-img {
+  width: 183px;
+  height: 70px;
+}
+
+.footer-list {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 40px;
+  border-left: 2px solid white;
+  margin-left: 80px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  
+}
+
+.footer-text {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding-left: 80px;
+}
+
+.footer-email {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+
+}
+.footer-text::after {
+  content: "    - - - - - - - - - - - ";
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.footer-copywright {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #FFFFFF;
+  font-family: var(---main-font);
 }
