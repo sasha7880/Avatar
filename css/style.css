@@ -15,17 +15,10 @@
   --second-family: "HeadlandOne" sans-serif;
   --button-language-change-font: "Hammersmith One" sans-serif;
 }
-
 .container {
-  width: 1030px;
-  margin: 0 auto;
+    margin: auto;
+    width: 1030px;
 }
-
-
-
-
-
-
 
 
 
@@ -56,8 +49,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 20px;
-  column-gap: 10px;
+  row-gap: 24px;
+  column-gap: 35px;
 
 }
 
@@ -66,7 +59,7 @@
   background-color: var(--language-bg_box-color);
   padding: 36px 29px;
   text-align: center;
-  flex-basis: calc(100% - 70px)/3;
+  flex-basis: calc((100% - 70px) / 3);
 
 }
 
@@ -81,10 +74,9 @@
   font-family: var(--second-family);
   display: flex;
   text-align: center;
-  padding: 40px 36px 120px;
-  Line-height: 24px;
-  Letter-spacing: 0px;
+  padding-bottom: 120px;
 }
+
 .bottom-text {
   font-family: var(--second-family);
   display: flex;
@@ -94,21 +86,26 @@
 
 
 
-.learning-item:nth-child(1), .learning-item:nth-child(4) {
-background: url("../imgs/strila-element-l.png") var(--language-bg_box-color) no-repeat;
-background-position: center;
-padding: 40px 84px;
+.learning-item:nth-child(1),
+.learning-item:nth-child(4) {
+  background: url("../imgs/strila-element-l.png") var(--language-bg_box-color) no-repeat;
+  background-position: center;
+
 }
-.learning-item:nth-child(2), .learning-item:nth-child(5) {
+
+.learning-item:nth-child(2),
+.learning-item:nth-child(5) {
   background: url("../imgs/bird-element.png") var(--language-bg_box-color) no-repeat;
   background-position: center;
-  padding: 40px 84px;
-  }
-  .learning-item:nth-child(3), .learning-item:nth-child(6) {
-    background: url("../imgs/strila-element-r.png") var(--language-bg_box-color) no-repeat;
-    background-position: center;
-    padding: 40px 84px;
-    }
+
+}
+
+.learning-item:nth-child(3),
+.learning-item:nth-child(6) {
+  background: url("../imgs/strila-element-r.png") var(--language-bg_box-color) no-repeat;
+  background-position: center;
+ 
+}
 
 
 
@@ -124,14 +121,10 @@ QUOTES SECTION SASHA */
   background-color: #fff;
   padding-top: 75px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: var(---main-font);
 }
 
-.quotes-container {
-  width: 1438px;
-  height: 350px;
-  margin: 0 auto;
-}
+
 
 .quotes-title {
   font-size: 36px;
@@ -140,14 +133,12 @@ QUOTES SECTION SASHA */
   line-height: 45px;
   text-transform: uppercase;
   margin: 0 0 20px 0;
-  padding-top: 75px;
-  padding-bottom: 54px;
+  padding-bottom: 16px;
 }
 
 .quotes-subtitle {
   font-size: 24px;
   color: var(--learning-navi-text);
-  margin: 0 0 30px 0;
   padding-top: 16px;
   padding-bottom: 8px;
   text-transform: uppercase;
@@ -174,10 +165,11 @@ QUOTES SECTION SASHA */
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(43, 74, 97, 0.9), rgba(43, 74, 97, 0.9)), 
-              url('./imgs/footer-bg.png') no-repeat center center;
+  background: linear-gradient(rgba(43, 74, 97, 0.9), rgba(43, 74, 97, 0.9)),
+    url('./imgs/footer-bg.png') no-repeat center center;
   background-size: cover;
 }
+
 .footer-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -213,7 +205,7 @@ QUOTES SECTION SASHA */
   align-items: center;
   margin-bottom: 15px;
   white-space: nowrap;
-  
+
 }
 
 .footer-text {
@@ -230,6 +222,7 @@ QUOTES SECTION SASHA */
   padding-left: 20px;
 
 }
+
 .footer-text::after {
   content: "    - - - - - - - - - - - ";
   color: #ffffff;
