@@ -57,9 +57,10 @@
 
 .learning-item {
   background-color: var(--language-bg_box-color);
-  padding: 36px 29px;
+  padding: 40px 28px;
   text-align: center;
   flex-basis: calc((100% - 70px) / 3);
+
 
 }
 
@@ -72,14 +73,12 @@
 
 .learning-subtitle {
   font-family: var(--second-family);
-  display: flex;
   text-align: center;
   padding-bottom: 120px;
 }
 
 .bottom-text {
   font-family: var(--second-family);
-  display: flex;
   text-align: center;
 
 }
@@ -95,7 +94,7 @@
 
 .learning-item:nth-child(2),
 .learning-item:nth-child(5) {
-  background: url("../imgs/bird-element.png") var(--language-bg_box-color) no-repeat;
+  background: url("../imgs/decoration-bird.png") var(--language-bg_box-color) no-repeat;
   background-position: center;
 
 }
