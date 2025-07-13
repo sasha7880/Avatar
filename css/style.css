@@ -15,12 +15,18 @@
   --second-family: "HeadlandOne" sans-serif;
   --button-language-change-font: "Hammersmith One" sans-serif;
 }
+body {
+    font-family: var(--main-font);
+    color: #fff;
+    border: solid, black, 1px;
+    background-color: #000;
+    align-items: center;
+}
+
 .container {
     margin: auto;
     width: 1030px;
 }
-
-
 
 
 
@@ -48,7 +54,6 @@
 .learning-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   row-gap: 24px;
   column-gap: 35px;
 
@@ -57,7 +62,8 @@
 
 .learning-item {
   background-color: var(--language-bg_box-color);
-  padding: 40px 28px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   flex-basis: calc((100% - 70px) / 3);
 
@@ -75,11 +81,15 @@
   font-family: var(--second-family);
   text-align: center;
   padding-bottom: 120px;
+  font-size: 24px;
+  color: #000000;
 }
 
 .bottom-text {
   font-family: var(--second-family);
   text-align: center;
+  font-size: 24px;
+  color: #000000;
 
 }
 
@@ -103,7 +113,7 @@
 .learning-item:nth-child(6) {
   background: url("../imgs/strila-element-r.png") var(--language-bg_box-color) no-repeat;
   background-position: center;
- 
+
 }
 
 
